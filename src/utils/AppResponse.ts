@@ -2,7 +2,7 @@ import { Response } from "express";
 
 type ResponseParamsType = {
   res: Response;
-  data: any;
+  data: unknown;
   message?: string;
   code: number;
   totalResults?: number;
@@ -25,14 +25,14 @@ class AppResponse {
     });
   }
 
-    static sendError({ res, data, message, code }: ResponseParamsType): void {
-      res.status(code).json({
-        status: "error",
-        data,
-        message,
-        code,
-      });
-    }
+  static sendError({ res, data, message, code }: ResponseParamsType): void {
+    res.status(code).json({
+      status: "error",
+      data,
+      message,
+      code,
+    });
+  }
 }
 
 export default AppResponse;
