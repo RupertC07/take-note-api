@@ -7,7 +7,7 @@
     "start": "nodemon src/server.ts",
     "build": "tsc",
     "lint": "eslint",
-    "lint:fix" : "eslint --fix"
+    "lint:fix": "eslint --fix"
   },
   "devDependencies": {
     "@eslint/js": "^9.3.0",
@@ -36,7 +36,9 @@
     "typescript-eslint": "^7.10.0"
   },
   "dependencies": {
+    "@huggingface/inference": "^2.8.1",
     "@prisma/client": "^5.5.2",
+    "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
@@ -54,7 +56,8 @@
     "prisma": "^5.4.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "zod": "^3.24.1"
   },
   "repository": "null",
   "author": "<johnrupertcaingal@gmail.com>"
