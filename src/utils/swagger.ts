@@ -11,9 +11,9 @@ const options: Options = {
   definition: {
     openapi: "3.1.0",
     info: {
-      title: "NEX HK [HAWAK KAMAY SCHOLARS MANAGEMENT AND MONITORING SYSTEM REVAMP]",
+      title: config.app.app_name ?? "API DOCS",
       description: "API Documentaion",
-      version: "2.0.0",
+      version: "1.0.0",
     },
     components: {
       securitySchemes: {

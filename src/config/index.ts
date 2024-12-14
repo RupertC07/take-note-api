@@ -4,7 +4,8 @@ const config = {
 
     app : {
         port : process.env.PORT || 8080,
-        env : process.env.PROJECT_ENV
+        env : process.env.PROJECT_ENV,
+        app_name: process.env.PROJECT_NAME
     },
     db :{},
     key : {
@@ -14,8 +15,8 @@ const config = {
         expiresIn: process.env.JWT_EXPIRES_IN,
     },
     url:{
-        local: `http://localhost:${process.env.PORT || 8000}/api/v2`,
-        forward : `${process.env.PORT_FORWARD_URL}api/v2`
+        local: `http://localhost:${process.env.PORT || 8000}/api/v1`,
+        forward : `${process.env.PORT_FORWARD_URL}api/v1`
     }
 
 };

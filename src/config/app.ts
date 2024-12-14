@@ -17,7 +17,7 @@ if (process.env.PROJECT_ENV === "development") {
     app.use(morgan("dev"));
   }
 
-app.use('/api/v2/', routes);
+app.use('/api/v1/', routes);
 swagger(app);
 
 app.get('/', (req, res) => {
